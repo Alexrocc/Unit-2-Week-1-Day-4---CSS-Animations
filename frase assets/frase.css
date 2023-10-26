@@ -31,21 +31,17 @@ p {
   padding-left: 10px;
 }
 
-#parola1 {
-  width: max-content;
-  position: absolute;
-  inset: 10;
-  animation: animation1 2.5s both;
-  text-shadow: none;
-}
-
+#parola1,
 #parola2,
 #parola3 {
   width: max-content;
   position: absolute;
-  inset: 10;
   color: transparent;
   text-shadow: none;
+}
+
+#parola1 {
+  animation: animation1 2.5s both;
 }
 
 #parola2 {
@@ -58,7 +54,7 @@ p {
 
 @keyframes animation1 {
   from {
-    color: white;
+    color: transparent;
     transform: translateY(55px);
   }
   50% {
@@ -72,6 +68,7 @@ p {
     text-shadow: none;
   }
 }
+
 @keyframes animation2 {
   from {
     color: transparent;
@@ -88,6 +85,7 @@ p {
     text-shadow: none;
   }
 }
+
 @keyframes animation3 {
   from {
     color: transparent;
