@@ -1,0 +1,89 @@
+body {
+  background-color: #666666;
+  font-family: "Indie Flower";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 40px;
+  padding: 10rem 3rem 0;
+}
+
+.post-it {
+  width: 290px;
+  height: 230px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 3px 5px 1px #393939;
+  transition: all 1s;
+}
+
+.post-it::before {
+  content: "";
+  background: rgb(112, 131, 230);
+  background: linear-gradient(
+    180deg,
+    rgba(112, 131, 230, 0) 66%,
+    rgba(116, 116, 116, 0.6446953781512605) 100%
+  );
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.post-it:nth-of-type(1),
+.post-it:nth-of-type(5),
+.post-it:nth-of-type(7) {
+  background-color: #f6f6c4;
+  transform: rotate(356deg);
+}
+
+.post-it:nth-of-type(2),
+.post-it:nth-of-type(4),
+.post-it:nth-of-type(8) {
+  background-color: #c5f4c6;
+  transform: rotate(5deg);
+}
+
+.post-it:nth-of-type(4).n4 {
+  transform: rotate(10deg);
+  /* translate: 20px -30px; */
+}
+
+.post-it:nth-of-type(3),
+.post-it:nth-of-type(6) {
+  background-color: #c7c6f1;
+  transform: rotate(353deg);
+}
+
+.post-it:nth-of-type(1):hover,
+.post-it:nth-of-type(5):hover,
+.post-it:nth-of-type(7):hover,
+.post-it:nth-of-type(3):hover,
+.post-it:nth-of-type(6):hover {
+  transform: rotate(360deg);
+  scale: 1.3;
+  z-index: 1;
+  transition: all 1s;
+}
+
+.post-it:nth-of-type(2):hover,
+.post-it:nth-of-type(4):hover,
+.post-it:nth-of-type(8):hover {
+  transform: rotate(0deg);
+  scale: 1.3;
+  z-index: 1;
+  transition: all 1s;
+}
+
+.post-it h2 {
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.post-it p {
+  font-size: 2rem;
+}
