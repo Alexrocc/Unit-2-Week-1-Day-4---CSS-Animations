@@ -35,7 +35,7 @@ p {
   width: max-content;
   position: absolute;
   inset: 10;
-  animation: animazione1 2.5s both;
+  animation: animation1 2.5s both;
   text-shadow: none;
 }
 
@@ -49,14 +49,14 @@ p {
 }
 
 #parola2 {
-  animation: animazione2 2.5s 3s both;
+  animation: animation2 2.5s 3s both;
 }
 
 #parola3 {
-  animation: animazione3 2.5s 6s both;
+  animation: animation3 2.5s 6s both;
 }
 
-@keyframes animazione1 {
+@keyframes animation1 {
   from {
     color: white;
     transform: translateY(55px);
@@ -72,7 +72,7 @@ p {
     text-shadow: none;
   }
 }
-@keyframes animazione2 {
+@keyframes animation2 {
   from {
     color: transparent;
     transform: translateY(55px);
@@ -88,7 +88,7 @@ p {
     text-shadow: none;
   }
 }
-@keyframes animazione3 {
+@keyframes animation3 {
   from {
     color: transparent;
     transform: translateY(55px);
