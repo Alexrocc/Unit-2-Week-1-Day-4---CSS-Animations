@@ -10,36 +10,97 @@
 
 * {
   font-size: 2rem;
+  font-family: "Bree Serif";
+  box-sizing: border-box;
 }
 
 #testoAlternato {
   margin-top: 10rem;
   margin-left: 5rem;
+  padding: 1em 4em 1em 1em;
+  border: 3px solid gray;
+  width: fit-content;
+}
+p {
+  color: rgb(71, 69, 69);
+  text-shadow: 1px 1px 0px #7b7a7a;
+}
+
+.parole {
+  position: relative;
+  padding-left: 10px;
 }
 
 #parola1 {
-  position: relative;
-  animation: animazioneParole 2s 2s forwards;
+  width: max-content;
+  position: absolute;
+  inset: 10;
+  animation: animazione1 2.5s both;
+  text-shadow: none;
 }
 
 #parola2,
 #parola3 {
+  width: max-content;
   position: absolute;
-  left: 256px;
-  display: none;
+  inset: 10;
+  color: transparent;
+  text-shadow: none;
 }
 
-@keyframes animazioneParole {
+#parola2 {
+  animation: animazione2 2.5s 3s both;
+}
+
+#parola3 {
+  animation: animazione3 2.5s 6s both;
+}
+
+@keyframes animazione1 {
   from {
     color: white;
-    transform: translateY(25px);
+    transform: translateY(55px);
   }
   50% {
     transform: translateY(0);
-    color: rgb(39, 68, 68);
+    color: rgb(142, 176, 187);
+    text-shadow: 1px 1px 0px #7b7a7a;
   }
   to {
-    transform: translateY(-25px);
-    color: white;
+    transform: translateY(-55px);
+    color: transparent;
+    text-shadow: none;
+  }
+}
+@keyframes animazione2 {
+  from {
+    color: transparent;
+    transform: translateY(55px);
+  }
+  50% {
+    transform: translateY(0);
+    color: rgb(142, 176, 187);
+    text-shadow: 1px 1px 0px #7b7a7a;
+  }
+  to {
+    color: transparent;
+    transform: translateY(-55px);
+    text-shadow: none;
+  }
+}
+@keyframes animazione3 {
+  from {
+    color: transparent;
+    transform: translateY(55px);
+  }
+  50% {
+    transform: translateY(0);
+    color: rgb(142, 176, 187);
+    text-shadow: 1px 1px 0px #7b7a7a;
+  }
+  to {
+    color: transparent;
+    transform: translateY(-55px);
+    text-shadow: none;
   }
 }
