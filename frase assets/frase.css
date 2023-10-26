@@ -8,6 +8,10 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+* {
+  font-size: 2rem;
+}
+
 #testoAlternato {
   margin-top: 10rem;
   margin-left: 5rem;
