@@ -8,3 +8,34 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+#testoAlternato {
+  margin-top: 10rem;
+  margin-left: 5rem;
+}
+
+#parola1 {
+  position: relative;
+  animation: animazioneParole 2s 2s forwards;
+}
+
+#parola2,
+#parola3 {
+  position: absolute;
+  left: 256px;
+  display: none;
+}
+
+@keyframes animazioneParole {
+  from {
+    color: white;
+    transform: translateY(25px);
+  }
+  50% {
+    transform: translateY(0);
+    color: rgb(39, 68, 68);
+  }
+  to {
+    transform: translateY(-25px);
+    color: white;
+  }
+}
